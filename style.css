@@ -1,0 +1,1648 @@
+/* ---------- brand fonts (self-hosted, extracted from Manual de Marca) ---------- */
+@font-face {
+    font-family: 'IvyOra Display';
+    src: url('fonts/IvyOraDisplay-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('fonts/UnivaNova-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('fonts/UnivaNova-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('fonts/UnivaNova-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univa Nova';
+    src: url('fonts/UnivaNova-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Hanken Grotesk: fallback only, per manual ("não deve ser tratada como
+   terceira linguagem tipográfica") — usada apenas se a Univa Nova falhar. */
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('fonts/HankenGrotesk-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('fonts/HankenGrotesk-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('fonts/HankenGrotesk-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('fonts/HankenGrotesk-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* ---------- design tokens: Manual de Marca Maurício Lindoso Advocacia v1.0 ---------- */
+    /* Cores extraídas do fill dos SVGs oficiais e conferidas na página
+       "Especificações Cromáticas" do manual (hex/Pantone/CMYK idênticos). */
+    --black-rgb: 10, 9, 12;
+    --red-rgb: 154, 17, 18;
+    --white-rgb: 250, 250, 250;
+
+    --black: #0a090c;
+    /* Pantone Black 6C */
+    --red: #9a1112;
+    /* Pantone 2350 C — vermelho institucional */
+    --red-light: #c23739;
+    /* tint do vermelho institucional, só para hovers/estados */
+    --white: #fafafa;
+    /* Pantone Cloud Dancer */
+    --pure-white: #ffffff;
+
+    /* Compatibilidade com os nomes de variável já usados no restante do CSS */
+    --navy: var(--black);
+    --ivory: var(--white);
+    --ivory-deep: #f0eeec;
+    --bronze: var(--red);
+    --bronze-light: var(--red-light);
+    /* O manual não define um cinza institucional — este tom é o preto
+       institucional com opacidade, não uma cor nova. */
+    --slate: rgba(var(--black-rgb), 0.62);
+    --line: rgba(var(--black-rgb), 0.1);
+    --line-light: rgba(var(--white-rgb), 0.16);
+
+    /* Tipografia: serifada (IvyOra Display Medium) só para títulos/headlines;
+       sans (Univa Nova) para navegação, UI e corpo — nunca a serifada em
+       blocos longos de texto corrido. */
+    --font-display: 'IvyOra Display', 'Hanken Grotesk', serif;
+    --font-body: 'Univa Nova', 'Hanken Grotesk', sans-serif;
+    --font-mono: var(--font-body);
+
+    --max-width: 1180px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--ivory);
+    color: var(--navy);
+    font-family: var(--font-body);
+    line-height: 1.65;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+:focus-visible {
+    outline: 2px solid var(--bronze);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+/* ---------- utility ---------- */
+.eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.eyebrow::before {
+    content: '';
+    width: 18px;
+    height: 1px;
+    background: var(--bronze);
+    display: inline-block;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 15px 30px;
+    border-radius: 2px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 14.5px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    /* texto branco: preto sobre vermelho institucional dá só 2.33:1 de
+       contraste (reprova WCAG AA); branco sobre vermelho dá 8.17:1 (AAA) */
+    background: var(--bronze);
+    color: var(--pure-white);
+}
+
+.btn-primary:hover {
+    background: var(--bronze-light);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(var(--red-rgb), 0.35);
+}
+
+.btn-outline-light {
+    background: transparent;
+    color: var(--ivory);
+    border-color: rgba(var(--white-rgb), 0.35);
+    /* 14.5px não é "texto grande" pra WCAG — com o overlay do hero mais
+       leve (25-40%) fica abaixo de AA contra a foto; sombra ajuda */
+    text-shadow: 0 1px 6px rgba(var(--black-rgb), 0.5);
+}
+
+.btn-outline-light:hover {
+    border-color: var(--bronze-light);
+    /* branco, não vermelho: texto vermelho aqui cairia a ~3.7:1 sobre o
+       hero escuro e reprovaria AA */
+    color: var(--pure-white);
+}
+
+.btn-outline-dark {
+    background: transparent;
+    color: var(--navy);
+    border-color: var(--line);
+}
+
+.btn-outline-dark:hover {
+    border-color: var(--navy);
+}
+
+/* Header transparente (sobre o hero): o botão herda o tratamento claro,
+   igual ao btn-outline-light usado no hero. */
+header:not(.header-scrolled) .btn-outline-dark {
+    color: var(--pure-white);
+    border-color: rgba(var(--white-rgb), 0.5);
+}
+
+header:not(.header-scrolled) .btn-outline-dark:hover {
+    border-color: var(--pure-white);
+}
+
+section {
+    position: relative;
+}
+
+/* ---------- header ---------- */
+/* Estado padrão: transparente sobre o hero (fixo, não sticky, pra
+   sobrepor o conteúdo). .header-scrolled é alternada via JS
+   (script.js) quando a página passa da altura do hero, ou aplicada
+   direto em páginas sem hero (ex.: blog). */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+header.header-scrolled {
+    background: rgba(var(--white-rgb), 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom-color: var(--line);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 32px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    z-index: 101;
+}
+
+.logo-img {
+    height: 42px;
+    width: auto;
+    display: block;
+}
+
+/* No topo (header transparente) mostra a versão branca da logo; depois
+   de rolar, troca pra versão vermelha — nunca as duas ao mesmo tempo. */
+.logo-img-dark {
+    display: none;
+}
+
+header.header-scrolled .logo-img-light {
+    display: none;
+}
+
+header.header-scrolled .logo-img-dark {
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a {
+    color: rgba(var(--white-rgb), 0.92);
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--pure-white);
+}
+
+header.header-scrolled .nav-links a {
+    color: var(--slate);
+}
+
+header.header-scrolled .nav-links a:hover {
+    color: var(--navy);
+}
+
+/* Hamburger Menu Button */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 101;
+}
+
+.hamburger {
+    width: 24px;
+    height: 2px;
+    background: rgba(var(--white-rgb), 0.92);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: rgba(var(--white-rgb), 0.92);
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+header.header-scrolled .hamburger,
+header.header-scrolled .hamburger::before,
+header.header-scrolled .hamburger::after {
+    background: var(--navy);
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+/* Open State */
+.menu-toggle.active .hamburger {
+    background: transparent;
+}
+.menu-toggle.active .hamburger::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+.menu-toggle.active .hamburger::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+/* ---------- hero ---------- */
+/* Fundo único (foto cobrindo a seção inteira, texto por cima). Overlay
+   mais leve que a calibração anterior (25-40%, era 35-65%) — foto fica
+   mais visível; ver checklist de contraste no final do arquivo pra saber
+   o que isso custou em legibilidade. */
+.hero {
+    padding: 130px 0;
+    background: linear-gradient(to bottom,
+            rgba(var(--black-rgb), 0.25) 0%,
+            rgba(var(--black-rgb), 0.27) 12%,
+            rgba(var(--black-rgb), 0.40) 20%,
+            rgba(var(--black-rgb), 0.40) 78%,
+            rgba(var(--black-rgb), 0.28) 88%,
+            rgba(var(--black-rgb), 0.26) 100%),
+        url('assets/fundo_hero.jpg') 75% center/cover no-repeat;
+    color: var(--ivory);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Texto estruturalmente à esquerda (não centralizado por sobra de
+   espaço). max-width e margin-left são independentes de propósito:
+   max-width define quanto o título pode respirar antes de quebrar linha
+   (largura do conteúdo), margin-left só desloca o bloco da borda (não
+   consome a largura do conteúdo, ao contrário de padding-left, que foi
+   o bug da rodada anterior). Calibrado olhando 1280/1440/1920px. */
+.hero-content {
+    max-width: 700px;
+    margin: 0 0 0 120px;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-text .eyebrow {
+    /* vermelho institucional em texto pequeno sobre a foto escurecida
+       reprova AA; branco garante leitura. Com o overlay mais leve
+       (25-40%) nem o branco passa mais contra essa foto clara — sombra
+       ajuda a leitura de verdade, ver checklist de contraste */
+    color: rgba(var(--white-rgb), 0.92);
+    text-shadow: 0 1px 6px rgba(var(--black-rgb), 0.5);
+}
+
+.hero-text .eyebrow::before {
+    content: '';
+    width: 18px;
+    height: 1px;
+    background: var(--bronze);
+    display: inline-block;
+}
+
+.hero-text h1 {
+    font-family: var(--font-display);
+    font-size: clamp(34px, 3.4vw, 52px);
+    font-weight: 600;
+    line-height: 1.15;
+    margin: 22px 0 24px;
+    letter-spacing: -0.01em;
+    /* branco puro só passa AA de texto grande (3:1) com folga mínima
+       (~3.2:1) contra essa foto no overlay mais leve — sombra dá margem */
+    text-shadow: 0 2px 10px rgba(var(--black-rgb), 0.45);
+}
+
+.hero-text h1 em {
+    font-style: italic;
+    color: var(--bronze-light);
+    font-weight: 500;
+    /* vermelho claro não passa em contraste formal contra a foto em
+       nenhuma opacidade razoável de overlay; a sombra reforça o
+       contorno da letra pra ajudar a leitura de verdade */
+    text-shadow: 0 2px 10px rgba(var(--black-rgb), 0.55);
+}
+
+.hero-text>p {
+    font-size: 17px;
+    color: rgba(var(--white-rgb), 0.72);
+    max-width: 480px;
+    margin: 0 0 36px;
+    text-shadow: 0 1px 8px rgba(var(--black-rgb), 0.45);
+}
+
+/* Marca d'água do monograma — versão alternativa do hero mobile (ver
+   .hero--mobile-monogram no @media 760px). Escondida por padrão: o
+   estado padrão do site é o fundo completo com foto, igual ao desktop. */
+.hero-monogram {
+    display: none;
+}
+
+.hero-ctas {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.hero-timeline {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border-top: 1px solid var(--line-light);
+    padding-top: 28px;
+    max-width: 460px;
+}
+
+.timeline-point {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.timeline-point strong {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--bronze-light);
+    line-height: 1;
+    text-shadow: 0 2px 8px rgba(var(--black-rgb), 0.55);
+}
+
+.timeline-point span {
+    font-size: 12.5px;
+    color: rgba(var(--white-rgb), 0.55);
+    /* fica abaixo de AA (~3.3:1, precisa 4.5:1) contra essa foto dentro
+       da faixa de opacidade pedida — sombra ajuda a leitura de verdade */
+    text-shadow: 0 1px 6px rgba(var(--black-rgb), 0.5);
+}
+
+.timeline-line {
+    flex-grow: 1;
+    height: 1px;
+    background: repeating-linear-gradient(to right, var(--bronze) 0, var(--bronze) 4px, transparent 4px, transparent 10px);
+    margin: 0 18px;
+    position: relative;
+    top: -1px;
+}
+
+
+
+/* ---------- welcome / intro ---------- */
+.intro {
+    padding: 110px 0;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    gap: 70px;
+}
+
+.intro-label h2 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3.2vw, 38px);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 18px;
+}
+
+.intro-body p {
+    font-size: 17px;
+    color: var(--slate);
+    margin-bottom: 22px;
+}
+
+.intro-body p:first-child {
+    font-size: 19px;
+    color: var(--navy);
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+/* Timeline compacta (1985/2026) — só existe pra reocupar o lugar da
+   .hero-timeline que some no mobile (ver @media 760px em ambas). No
+   desktop fica escondida porque a timeline já aparece no hero. */
+.intro-timeline {
+    display: none;
+}
+
+/* ---------- practice areas ---------- */
+.areas {
+    padding: 100px 0 120px;
+    background: var(--ivory-deep);
+}
+
+.section-head {
+    max-width: 600px;
+    margin-bottom: 56px;
+}
+
+.section-head h2 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 3.2vw, 38px);
+    font-weight: 600;
+    margin-top: 18px;
+    line-height: 1.2;
+}
+
+.section-head p {
+    color: var(--slate);
+    font-size: 16px;
+    margin-top: 14px;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+}
+
+.area-card {
+    background: var(--ivory-deep);
+    padding: 38px 28px;
+    transition: background 0.3s ease;
+}
+
+.area-card:hover {
+    background: var(--white);
+}
+
+.area-icon {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.area-num {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--bronze);
+    margin-bottom: 24px;
+    display: block;
+}
+
+.area-card h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.area-card p {
+    font-size: 14px;
+    color: var(--slate);
+}
+
+/* ---------- founder ---------- */
+.founder {
+    padding: 120px 0;
+}
+
+.founder-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.founder-photo {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.founder-photo img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.founder-frame {
+    position: absolute;
+    inset: 16px;
+    border: 1px solid rgba(var(--white-rgb), 0.4);
+    pointer-events: none;
+}
+
+.founder-content .eyebrow {
+    margin-bottom: 18px;
+}
+
+.founder-content h2 {
+    font-family: var(--font-display);
+    font-size: clamp(26px, 3vw, 34px);
+    font-weight: 600;
+    margin-bottom: 22px;
+    line-height: 1.25;
+}
+
+.founder-content>p {
+    font-size: 16.5px;
+    color: var(--slate);
+    margin-bottom: 28px;
+    max-width: 520px;
+}
+
+.founder-sign {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 26px;
+    border-top: 1px solid var(--line);
+}
+
+.founder-sign strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.founder-sign span {
+    font-size: 13.5px;
+    color: var(--slate);
+}
+
+/* ---------- equipe (team) ---------- */
+.team {
+    padding: 0 0 120px 0; 
+}
+
+.team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+.team-photo {
+    width: 260px;
+    flex-shrink: 0;
+    aspect-ratio: 4/5;
+    background: var(--ivory-deep);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(15%);
+}
+
+.team-member-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member h3 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.team-member span {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--bronze);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.team-member p {
+    font-size: 15px;
+    color: var(--slate);
+    line-height: 1.6;
+}
+
+/* Toggle: no desktop é só um contêiner passivo (nada clicável, sem
+   cursor, sem chevron). No mobile (ver @media 760px) vira o cabeçalho
+   do accordion — cursor, chevron e o corpo da bio escondido por padrão. */
+.team-member-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.team-member-chevron {
+    display: none;
+    width: 20px;
+    height: 20px;
+    color: var(--bronze);
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+/* ---------- why choose ---------- */
+.why {
+    padding: 110px 0;
+    background: var(--navy);
+    color: var(--ivory);
+}
+
+.why .eyebrow {
+    /* mesmo motivo do hero: vermelho em texto pequeno sobre fundo escuro
+       reprova contraste AA — usar branco aqui */
+    color: rgba(var(--white-rgb), 0.92);
+}
+
+.why .eyebrow::before {
+    background: var(--bronze-light);
+}
+
+.why .section-head h2 {
+    color: var(--ivory);
+}
+
+.why .section-head p {
+    color: rgba(var(--white-rgb), 0.62);
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.why-item {
+    border-top: 1px solid var(--line-light);
+    padding-top: 28px;
+}
+
+.why-item-icon {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--bronze);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.why-item-icon svg,
+.why-item-icon img {
+    width: 20px;
+    height: 20px;
+    stroke: var(--bronze-light);
+}
+
+.why-item h3 {
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.why-item p {
+    font-size: 14.5px;
+    color: rgba(var(--white-rgb), 0.6);
+}
+
+/* ---------- process ---------- */
+.process {
+    padding: 110px 0;
+}
+
+.process-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.process-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 1.4fr;
+    gap: 32px;
+    padding: 32px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: start;
+}
+
+.process-row:first-child {
+    border-top: 1px solid var(--line);
+}
+
+.process-row .pnum {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--bronze);
+}
+
+.process-row h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 4px;
+}
+
+.process-row p {
+    font-size: 15px;
+    color: var(--slate);
+    max-width: 480px;
+}
+
+/* ---------- contact ---------- */
+.contact {
+    padding: 110px 0 100px;
+    background: var(--ivory-deep);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 0;
+    background: var(--white);
+    border: 1px solid var(--line);
+}
+
+.contact-info {
+    padding: 56px 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h2 {
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 18px 0 16px;
+    line-height: 1.25;
+}
+
+.contact-info>p {
+    color: var(--slate);
+    font-size: 15.5px;
+    margin-bottom: 36px;
+}
+
+.contact-detail {
+    display: flex;
+    gap: 16px;
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+}
+
+.contact-detail:last-of-type {
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 32px;
+}
+
+.contact-detail-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--ivory-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-detail-icon svg {
+    width: 17px;
+    height: 17px;
+    stroke: var(--bronze);
+}
+
+.contact-detail strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.contact-detail span {
+    font-size: 13.5px;
+    color: var(--slate);
+    line-height: 1.5;
+}
+
+.contact-info .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.contact-map {
+    position: relative;
+    min-height: 420px;
+    background: var(--ivory-deep);
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    border: 0;
+    filter: grayscale(15%) contrast(1.05);
+}
+
+/* ---------- footer ---------- */
+footer {
+    background: var(--navy);
+    color: rgba(var(--white-rgb), 0.7);
+    padding: 56px 0 32px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--line-light);
+}
+
+.footer-brand .logo-img {
+    height: 34px;
+    margin-bottom: 14px;
+}
+
+.footer-brand p {
+    font-size: 13.5px;
+    max-width: 280px;
+    line-height: 1.6;
+}
+
+.footer-col h4 {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    /* mesmo ajuste de contraste: vermelho em texto pequeno sobre fundo
+       escuro reprova AA (~3.7:1) — branco garante leitura no rodapé */
+    color: rgba(var(--white-rgb), 0.92);
+    margin-bottom: 16px;
+}
+
+.footer-col a,
+.footer-col span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(var(--white-rgb), 0.7);
+}
+
+.footer-col a:hover {
+    color: var(--pure-white);
+}
+
+.footer-bottom {
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12.5px;
+}
+
+/* ---------- reveal ---------- */
+.reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ---------- responsive ---------- */
+/* ---------- blog (listagem + artigo) ---------- */
+/* Páginas sem .hero: o header fica sempre no estado "scrolled" (ver
+   script.js), então a primeira seção precisa de padding-top pra não
+   ficar atrás do header fixo. */
+.blog-listing {
+    padding: 190px 0 120px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 50px;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.blog-card:hover {
+    box-shadow: 0 16px 32px rgba(var(--black-rgb), 0.08);
+    transform: translateY(-3px);
+}
+
+.blog-card-cover {
+    aspect-ratio: 16 / 10;
+    background: var(--ivory-deep);
+    overflow: hidden;
+}
+
+.blog-card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.blog-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.blog-category {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--red);
+    background: rgba(var(--red-rgb), 0.08);
+    padding: 3px 9px;
+    border-radius: 3px;
+}
+
+.blog-card-body h3 {
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.32;
+    color: var(--navy);
+}
+
+.blog-card-excerpt {
+    font-size: 14px;
+    color: var(--slate);
+    line-height: 1.55;
+    flex: 1;
+}
+
+.blog-card-date {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--slate);
+}
+
+.blog-load-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+}
+
+.blog-load-more .btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+/* ---------- artigo ---------- */
+.article-header {
+    padding-top: 190px;
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.article-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 16px 0;
+}
+
+.article-header .blog-categories {
+    justify-content: center;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--slate);
+}
+
+.article-cover {
+    max-width: 960px;
+    margin: 40px auto 0;
+    padding: 0 32px;
+}
+
+.article-cover img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: var(--ivory-deep);
+}
+
+.article-body {
+    max-width: 700px;
+    margin: 48px auto 0;
+    font-size: 17px;
+    color: var(--slate);
+    line-height: 1.75;
+}
+
+.article-body h2 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 44px 0 18px;
+    line-height: 1.3;
+}
+
+.article-body h3 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 36px 0 14px;
+    line-height: 1.3;
+}
+
+.article-body h4 {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 28px 0 12px;
+}
+
+.article-body p {
+    margin-bottom: 22px;
+}
+
+.article-body ul,
+.article-body ol {
+    margin: 0 0 22px 22px;
+}
+
+.article-body li {
+    margin-bottom: 8px;
+}
+
+.article-body blockquote {
+    border-left: 3px solid var(--red);
+    padding-left: 20px;
+    margin: 28px 0;
+    font-style: italic;
+    color: var(--navy);
+}
+
+.article-body figure {
+    margin: 32px 0;
+}
+
+.article-body img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.article-body figcaption {
+    font-size: 13px;
+    color: var(--slate);
+    margin-top: 8px;
+    text-align: center;
+}
+
+.article-body a {
+    /* vermelho institucional como texto: 8.17:1 sobre fundo claro,
+       passa AAA (ver checklist de contraste da identidade visual) */
+    color: var(--red);
+    text-decoration: underline;
+    text-decoration-color: rgba(var(--red-rgb), 0.35);
+    text-underline-offset: 2px;
+}
+
+.article-body a:hover {
+    text-decoration-color: var(--red);
+}
+
+.article-back {
+    display: block;
+    width: fit-content;
+    margin: 8px auto 80px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--slate);
+    max-width: 700px;
+}
+
+.article-back:hover {
+    color: var(--navy);
+}
+@media (max-width: 980px) {
+    .hero-content {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .hero-text>p {
+        max-width: 100%;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .areas-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .founder-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .process-row {
+        grid-template-columns: 50px 1fr;
+    }
+
+    .process-row p {
+        grid-column: 2;
+        max-width: 100%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map {
+        min-height: 320px;
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        padding: 15px 20px;
+    }
+    
+    .logo-img {
+        height: 40px;
+        /* mantém a largura >= 160px, dimensão mínima em tela do manual */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--ivory);
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 24px;
+        border-bottom: 1px solid var(--line);
+        box-shadow: 0 10px 20px rgba(var(--black-rgb), 0.05);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.4s ease;
+        visibility: hidden;
+    }
+
+    .nav-links.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        visibility: visible;
+    }
+
+    /* O painel mobile é sempre claro (var(--ivory)), então os links
+       ficam sempre escuros aqui, independente do header estar
+       transparente ou não sobre o hero. */
+    .nav-links a {
+        color: var(--slate);
+    }
+
+    .nav-links a:hover {
+        color: var(--navy);
+    }
+
+    header .nav-links .btn-outline-dark {
+        color: var(--navy);
+        border-color: var(--line);
+    }
+
+    header .nav-links .btn-outline-dark:hover {
+        border-color: var(--navy);
+    }
+
+    .nav-links .btn {
+        width: 100%; 
+    }
+
+    .wrap {
+        padding: 0 20px;
+    }
+
+    .hero {
+        /* padding confortável — a seção não devia encolher só porque a
+           timeline saiu, o respiro é pra ficar com o que sobrou */
+        padding: 90px 0;
+        /* Mesma foto/posição do desktop, mas overlay bem mais escuro
+           (60-75%, era 25-40%): no recorte visível do mobile a foto só
+           mostra tecido, não as mãos (o elemento principal), então
+           escurecer mais aqui não perde conteúdo relevante — só reduz
+           ruído visual atrás do texto. Não mexe no overlay do desktop. */
+        background: linear-gradient(to bottom,
+                rgba(var(--black-rgb), 0.62) 0%,
+                rgba(var(--black-rgb), 0.64) 12%,
+                rgba(var(--black-rgb), 0.72) 20%,
+                rgba(var(--black-rgb), 0.72) 78%,
+                rgba(var(--black-rgb), 0.65) 88%,
+                rgba(var(--black-rgb), 0.63) 100%),
+            url('assets/fundo_hero.jpg') 75% center/cover no-repeat;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .hero-text>p {
+        font-size: 14.5px;
+        margin-bottom: 44px;
+    }
+
+    /* ---- versão alternativa: monograma no lugar da foto (comparação
+       pro cliente — ver comentário no HTML sobre como alternar) ---- */
+    .hero--mobile-monogram {
+        /* degradê sutil dentro da própria paleta: preto institucional
+           até um vinho escuro (preto + vermelho institucional, 28%) —
+           não é uma cor nova, é uma mistura das duas cores da marca.
+           Sobrescreve o background (foto) herdado do desktop acima. */
+        background: linear-gradient(155deg, var(--black) 0%, #320b0e 100%);
+    }
+
+    .hero--mobile-monogram .hero-monogram {
+        display: block;
+        position: absolute;
+        width: 95vw;
+        max-width: 460px;
+        /* sangra pra fora do canto inferior direito — não centralizado,
+           não inteiro dentro da área visível */
+        bottom: -4%;
+        right: -8%;
+        opacity: 0.11;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .hero--mobile-monogram .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* CTAs empilhados, largura total, mas menores que no desktop */
+    .hero-ctas {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .hero-ctas .btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 13.5px;
+    }
+
+    /* Timeline sai do hero no mobile (não cabe bem com o texto menor
+       empurrando o enquadramento da foto) — versão compacta mora em
+       #sobre agora, ver .intro-timeline */
+    .hero-timeline {
+        display: none;
+    }
+
+    .intro-timeline {
+        display: flex;
+        align-items: center;
+        gap: 0;
+        border-top: 1px solid var(--line);
+        padding-top: 24px;
+        margin-top: 6px;
+    }
+
+    .intro-timeline .timeline-point {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .intro-timeline .timeline-point strong {
+        font-family: var(--font-display);
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--bronze);
+        line-height: 1;
+        text-shadow: none;
+    }
+
+    .intro-timeline .timeline-point span {
+        font-size: 12px;
+        color: var(--slate);
+        text-shadow: none;
+    }
+
+    .intro-timeline .timeline-line {
+        flex-grow: 1;
+        height: 1px;
+        background: repeating-linear-gradient(to right, var(--bronze) 0, var(--bronze) 4px, transparent 4px, transparent 10px);
+        margin: 0 16px;
+    }
+
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-member {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px 20px 24px;
+        text-align: left;
+        gap: 16px;
+    }
+
+    /* Retangular, largura cheia do card (mesma lógica da .founder-photo
+       no mobile) — não mais um avatarzinho circular solto no card. */
+    .team-photo {
+        width: 100%;
+        height: 300px;
+        border-radius: 4px;
+        margin: 0;
+    }
+
+    .team-member-info {
+        width: 100%;
+    }
+
+    .team-member-toggle {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .team-member-chevron {
+        display: block;
+    }
+
+    .team-member.is-open .team-member-chevron {
+        transform: rotate(180deg);
+    }
+
+    /* bio escondida até tocar — o toggle já dá o cabeçalho (nome +
+       cargo); só o corpo da biografia fica em accordion */
+    .team-member p {
+        display: none;
+        text-align: left;
+        font-size: 15px;
+        margin-top: 8px;
+    }
+
+    .team-member.is-open p {
+        display: block;
+    }
+    
+    .founder-photo img {
+        height: 380px;
+    }
+
+    .contact-info {
+        padding: 40px 24px; 
+    }
+    
+    .contact-detail {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+    
+    .intro, .areas, .founder, .team, .why, .process, .contact {
+        padding: 60px 0;
+    }
+
+    .team {
+        padding-top: 0;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-listing {
+        padding: 130px 0 60px;
+    }
+
+    .article-header {
+        padding-top: 130px;
+    }
+
+    .article-cover {
+        margin-top: 28px;
+    }
+}
+

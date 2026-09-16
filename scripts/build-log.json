@@ -1,0 +1,853 @@
+{
+  "generatedAt": "2026-09-16T01:28:59.486Z",
+  "wpApiBase": "https://mauriciolindoso.adv.br/wp-json/wp/v2",
+  "totalPosts": 93,
+  "totalListingBatches": 11,
+  "postsPerBatch": 9,
+  "images": {
+    "featured": 0,
+    "content": 0,
+    "fallback": 93
+  },
+  "fallbackImageSlugs": [
+    "qual-o-melhor-regime-de-bens-para-os-empresarios-brasileiros",
+    "abandono-afetivo-agora-e-ilicito-civil-o-afeto-virou-dever-juridico",
+    "como-a-pensao-alimenticia-pode-reduzir-o-imposto-de-renda-de-quem-a-paga",
+    "testamento-solidario-um-instrumento-de-solidariedade-e-planejamento-sucessorio",
+    "a-possibilidade-de-fixacao-de-multa-pecuniaria-nodescumprimento-da-regulamentacao-de-visitas-ou-daconvivencia-com-os-filhos-estipulada-judicialmente",
+    "stj-define-que-arrematante-nao-e-responsavel-por-tributos-anteriores-do-imovel-em-leilao-judicial",
+    "mandado-de-averbacao-da-sentenca-de-divorcio-conceito-e-procedimentos",
+    "tributacao-sucessoria-sobre-vgbl-e-pgbl",
+    "tendencia-de-aumento-do-imposto-sucessorio",
+    "problemas-e-riscos-das-holdings-familiares",
+    "isencao-do-imposto-de-renda-para-pensoes-alimenticias-como-recuperar-os-valores-pagos-nos-ultimos-cinco-anos",
+    "contrato-de-namoro-ou-uniao-estavel",
+    "impacto-da-reforma-tributaria-no-direito-sucessorio",
+    "stj-entende-que-em-casos-de-abuso-sexual-infantil-o-prazo-prescricional-passa-a-correr-a-partir-da-consciencia-do-dano-e-nao-mais-apos-a-maioridade-civil",
+    "planejamento-sucessorio-o-que-saber-e-fazer-antes-de-comecar",
+    "informacoes-basicas-e-lista-de-documentos-para-a-realizacao-de-inventario-extrajudicial",
+    "787",
+    "comunhao-parcial-de-bens-aspectos-e-implicacoes-no-ambito-do-direito-de-familia-e-sucessoes",
+    "os-pressupostos-basicos-para-a-revisao-da-pensao-alimenticia",
+    "do-necessario-reajuste-anual-das-pensoes-alimenticias-e-da-possibilidade-da-cobranca-retroativa-da-pensao-nao-atualizada",
+    "possibilidade-de-partilha-e-de-sobrepartilha-do-saldo-de-fgts-nas-acoes-de-divorcio",
+    "alimentos-compensatorios",
+    "partilha-em-vida-uma-estrategia-de-planejamento-sucessorio",
+    "reflexoes-juridicas-sobre-a-extincao-da-separacao-judicial-pelo-stf-e-a-influencia-da-culpa-na-dissolucao-dos-vinculos-conjugais-e-afetivos",
+    "stf-mantem-efeito-retroativo-de-decisao-que-afastou-a-cobranca-ir-sobre-pensoes-alimenticias-saiba-como-isso-afeta-voce",
+    "cinco-questoes-juridicas-relevantes-e-pouco-conhecidas-sobre-o-divorcio",
+    "o-que-e-um-testamento-e-quais-suas-principais-vantagens",
+    "qual-a-melhor-forma-de-planejamento-sucessorio",
+    "estou-sendo-impedido-de-ver-meus-filhos-o-que-devo-fazer",
+    "stf-afasta-cobranca-de-imposto-de-renda-sobre-a-pensao-alimenticia",
+    "inovacoes-da-lei-maria-da-penha",
+    "o-que-voce-precisa-saber-sobre-o-imposto-de-transmissao-causa-mortis-e-doacao",
+    "cinco-questoes-patrimoniais-do-direito-de-familia-que-poucos-conhecem",
+    "cinco-coisas-sobre-inventario-extrajudicial",
+    "breves-consideracoes-sobre-as-principais-diferencas-entre-uniao-estavel-e-namoro",
+    "pensao-alimenticia-e-pandemia",
+    "cinco-coisas-sobre-violencia-domestica",
+    "os-alimentos-compensatorios-retroagem-a-data-da-citacao",
+    "cinco-coisas-que-voce-precisa-saber-sobre-o-divorcio",
+    "doencas-que-isentam-o-pagamento-de-imposto-de-renda",
+    "funcionamento-codvid-19",
+    "divorcio-2",
+    "alimentos-2",
+    "outros",
+    "divorcio",
+    "direito-sucessorio",
+    "concubinato-uniao-estavel",
+    "bens-regimes",
+    "alimentos",
+    "alimentos-compensatorios-vies-compensatorio-indenizatorio-pelo-prejuizo-presumido-consistente-na-nao-imissao-imediata-nos-bens-afetos-ao-quinhao-a-que-faz-jus-recurso-ordinario",
+    "uniao-estavel-familias-paralelas-dever-de-fidelidade-direito-civil-recurso-especial-familia-acao-de-reconhecimento-de-uniao-estavel-relacao-concomitante-dever-de-fid",
+    "exoneracao-de-alimentos-alimentos-temporarios-direito-civil-recurso-especial-familia-acao-de-exoneracao-de-alimentos-acordo-para-pagamento-de-pensao-ex-conjuge-manutencao-da",
+    "sucessoes-direito-processual-civil-legitimidade-ativa-do-espolio-em-demanda-na-qual-se-busque-indenizacao-securitaria-por-invalidez-permanente",
+    "alimentos-provisorios-eficacia-agravo-regimental-no-agravo-em-recurso-especial-alimentos-provisorios-execucao-posterior-reconhecimento-judicial-de-inexistencia-da-responsabilida",
+    "regime-de-bens-alteracao-recurso-especial-civil-e-processual-civil-direito-de-familia-dissolucao-do-casamento-alteracao-do-regime-de-bens-termo-inicial-dos-seus-efeitos-ex-nu",
+    "bem-de-familia-direito-civil-caracterizacao-como-bem-de-familia-do-unico-imovel-residencial-do-devedor-cedido-a-familiares",
+    "dano-moral-falecimento-direito-civil-metodologia-de-fixacao-de-danos-morais-devidos-a-parentes-de-vitimas-de-dano-morte-na-hipotese-de-nucleos-familiares-com-diferente-numero-de-m",
+    "alimentos-possibilidades-executorias-direito-civil-e-processual-civil-adjudicacao-de-direitos-hereditarios-do-herdeiro-devedor-de-alimentos",
+    "partilha-de-bens-no-exterior-direito-processual-civil-e-direito-internacional-privado-competencia-para-reconhecimento-de-direito-a-meacao-de-bens-localizados-fora-do-brasil",
+    "desconsideracao-inversa-da-personalidade-juridica-direito-processual-civil-legitimidade-de-pessoa-juridica-para-impugnar-decisao-que-desconsidere-a-sua-personalidade",
+    "penhorabilidade-de-bem-de-familia-direito-civil-afastamento-da-protecao-dada-ao-bem-de-familia",
+    "pensao-previdenciaria-por-morte-menor-direito-previdenciario-concessao-de-beneficio-previdenciario-a-crianca-ou-adolescente-sob-guarda-judicial",
+    "impossibilidade-de-homologacao-de-sentenca-estrangeira-acao-de-alimentos-e-guarda-em-tramite-no-brasil-direito-processual-civil-hipotese-em-que-nao-e-possivel-a-homologacao-de-sen",
+    "bem-de-familia-direito-civil-e-processual-civil-impenhorabilidade-do-bem-de-familia-frente-a-hipotese-de-desconsideracao-da-personalidade-juridica",
+    "cumprimento-de-sentenca-em-acao-de-alimentos-direito-processual-civil-recurso-especial-acao-de-alimentos-execucao-cumprimento-de-sentenca-artigos-analisados-475-j-e-732-do-cpc",
+    "uniao-recorre-ao-stf-para-suspender-pagamento-de-vantagem-a-procurador-federal",
+    "ministro-nega-liminar-para-servidor-que-teve-aposentadoria-cancelada-pelo-tcu",
+    "relator-vota-pela-equiparacao-da-uniao-homoafetiva-estavel-a-entidade-familiar",
+    "uniao-homoafetiva-ministro-celso-de-mello-cassa-decisao-que-nao-reconheceu-uniao-estavel-homoafetiva",
+    "uniao-homoafetiva-voto-do-min-celso-de-mello-em-recurso-que-reconheceu-direito-previdenciario-de-companheiro-homoafetivo",
+    "lei-maria-da-penha-acao-penal-incondicionada-a-retratacao-da-vitima",
+    "sucessoes-jurisprudencia-sobre-sucessao-do-conjuge-e-instavel-por-jose-rogerio-cruz-e-tucci",
+    "separacao-de-corpos-e-o-desenlace-familiar-maria-berenice-dias",
+    "separacao-mudancas-na-lei-nao-extinguiram-a-separacao-fernando-augusto-de-vita-borges-de-sales",
+    "reproducao-assistida",
+    "paternidade-socioafetiva-e-o-retrocesso-da-sumula-n-301-do-stj-paulo-luiz-netto-lobo",
+    "paternidade-socioafetiva-luiz-fernando-valladao",
+    "falar-com-o-juiz-paulo-evandro-de-siqueira",
+    "em-breve-alienacao-parental-sera-crime-denise-maria-perissini-da-silva",
+    "ec-66-2010-ec-no-66-10-a-emenda-constitucional-do-casamento-arnoldo-camanho-de-assis",
+    "ec-66-2010-ec-66-10-e-agora-maria-berenice-dias",
+    "ec-66-2010-a-emenda-constitucional-n-66-2010-semelhancas-diferencas-e-inutilidades-entre-separacao-e-divorcio-e-o-direito-intertemporal-rodrigo-da-cunha-pereira",
+    "divorcio-las-vegas-e-aqui-marco-tulio-murano-garcia",
+    "alimentos-teoria-da-aparencia-na-defesa-dos-interesses-do-alimentado-fernanda-dal-sasso-de-resende",
+    "alimentos-obrigacao-dever-de-assistencia-e-alimentos-transitorios-rolf-madaleno",
+    "alimentos-dos-alimentos-gravidicos-lei-no-11-804-2008-antonio-cezar-lima-da-fonseca",
+    "alimentos-alimentos-gravidicos-aspectos-da-lei-n-11-804-2008-leandro-soares-lomeu",
+    "alimentos-alimentos-gravidicos-e-a-lei-n-11-804-2008-douglas-phillips-freitas",
+    "alimentos-alimentos-gravidicos-jesualdo-eduardo-de-almeida-junior",
+    "alimentos-alimentos-compensatorios-lauro-olsen",
+    "acordo-de-alimentos-firmado-por-advogado-sem-poder-para-tanto-e-anulado-pela-justica",
+    "abandono-afetivo",
+    "a-autenticacao-de-documentos-no-novo-codigo-civil-mario-antonio-lobato-de-paiva"
+  ],
+  "flaggedPosts": [
+    {
+      "slug": "qual-o-melhor-regime-de-bens-para-os-empresarios-brasileiros",
+      "title": "Qual o melhor regime de bens para os empresários brasileiros?",
+      "notes": [
+        "imagem(ns) referenciada(s) no post não existem mais (404) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "abandono-afetivo-agora-e-ilicito-civil-o-afeto-virou-dever-juridico",
+      "title": "ABANDONO AFETIVO AGORA É ILÍCITO CIVIL — O AFETO VIROU DEVER JURÍDICO",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "como-a-pensao-alimenticia-pode-reduzir-o-imposto-de-renda-de-quem-a-paga",
+      "title": "Como a Pensão Alimentícia pode reduzir o Imposto de Renda de quem a paga.",
+      "notes": [
+        "imagem(ns) referenciada(s) no post não existem mais (404) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "testamento-solidario-um-instrumento-de-solidariedade-e-planejamento-sucessorio",
+      "title": "Testamento Solidário: Um Instrumento de Solidariedade e Planejamento Sucessório",
+      "notes": [
+        "imagem(ns) referenciada(s) no post não existem mais (404) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "a-possibilidade-de-fixacao-de-multa-pecuniaria-nodescumprimento-da-regulamentacao-de-visitas-ou-daconvivencia-com-os-filhos-estipulada-judicialmente",
+      "title": "A POSSIBILIDADE DE FIXAÇÃO DE MULTA PECUNIÁRIA NO DESCUMPRIMENTO DA REGULAMENTAÇÃO DE VISITAS OU DA CONVIVÊNCIA COM OS FILHOS ESTIPULADA JUDICIALMENTE",
+      "notes": [
+        "imagem(ns) referenciada(s) no post não existem mais (404) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "stj-define-que-arrematante-nao-e-responsavel-por-tributos-anteriores-do-imovel-em-leilao-judicial",
+      "title": "STJ Define que Arrematante não é Responsável por Tributos Anteriores do Imóvel em Leilão Judicial",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "mandado-de-averbacao-da-sentenca-de-divorcio-conceito-e-procedimentos",
+      "title": "Mandado de Averbação da Sentença de Divórcio: Conceito e Procedimentos",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "tributacao-sucessoria-sobre-vgbl-e-pgbl",
+      "title": "Tributação Sucessória sobre VGBL e PGBL",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "tendencia-de-aumento-do-imposto-sucessorio",
+      "title": "Tendência de Aumento do Imposto Sucessório",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "problemas-e-riscos-das-holdings-familiares",
+      "title": "PROBLEMAS E RISCOS DAS HOLDINGS FAMILIARES",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "isencao-do-imposto-de-renda-para-pensoes-alimenticias-como-recuperar-os-valores-pagos-nos-ultimos-cinco-anos",
+      "title": "Isenção do Imposto de Renda para Pensões Alimentícias, como recuperar os valores pagos nos últimos cinco anos",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "contrato-de-namoro-ou-uniao-estavel",
+      "title": "Contrato de Namoro ou União Estável?",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "impacto-da-reforma-tributaria-no-direito-sucessorio",
+      "title": "Impacto da Reforma Tributária no Direito Sucessório",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "stj-entende-que-em-casos-de-abuso-sexual-infantil-o-prazo-prescricional-passa-a-correr-a-partir-da-consciencia-do-dano-e-nao-mais-apos-a-maioridade-civil",
+      "title": "STJ entende que em casos de abuso sexual infantil o prazo prescricional passa a correr a partir da consciência do dano e não mais após a maioridade civil.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "planejamento-sucessorio-o-que-saber-e-fazer-antes-de-comecar",
+      "title": "Planejamento Sucessório, o que saber e fazer antes de começar.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "informacoes-basicas-e-lista-de-documentos-para-a-realizacao-de-inventario-extrajudicial",
+      "title": "Informações básicas e lista de documentos para a realização de inventário extrajudicial",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "787",
+      "title": "O Inventário Judicial: Fases, Ritos, Deveres do Inventariante e Estratégias para Agilizar e Otimizar o seu andamento.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "comunhao-parcial-de-bens-aspectos-e-implicacoes-no-ambito-do-direito-de-familia-e-sucessoes",
+      "title": "Comunhão Parcial de Bens: Aspectos e Implicações no Âmbito do Direito de Família e Sucessões",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "os-pressupostos-basicos-para-a-revisao-da-pensao-alimenticia",
+      "title": "Os Pressupostos Básicos para a Revisão da Pensão Alimentícia",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "do-necessario-reajuste-anual-das-pensoes-alimenticias-e-da-possibilidade-da-cobranca-retroativa-da-pensao-nao-atualizada",
+      "title": "Do Necessário Reajuste Anual das Pensões Alimentícias e da Possibilidade da Cobrança Retroativa da Pensão Não Atualizada",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "possibilidade-de-partilha-e-de-sobrepartilha-do-saldo-de-fgts-nas-acoes-de-divorcio",
+      "title": "Possibilidade de Partilha e de Sobrepartilha do Saldo de FGTS nas Ações de Divórcio",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-compensatorios",
+      "title": "Alimentos Compensatórios",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "partilha-em-vida-uma-estrategia-de-planejamento-sucessorio",
+      "title": "Partilha em Vida: Uma Estratégia de Planejamento Sucessório.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "reflexoes-juridicas-sobre-a-extincao-da-separacao-judicial-pelo-stf-e-a-influencia-da-culpa-na-dissolucao-dos-vinculos-conjugais-e-afetivos",
+      "title": "Reflexões Jurídicas sobre a Extinção da Separação Judicial pelo STF e a Influência da Culpa na dissolução dos vínculos conjugais e afetivos.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "stf-mantem-efeito-retroativo-de-decisao-que-afastou-a-cobranca-ir-sobre-pensoes-alimenticias-saiba-como-isso-afeta-voce",
+      "title": "STF Mantém efeito retroativo de decisão que afastou a cobrança IR sobre pensões alimentícias: saiba como isso afeta você.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "cinco-questoes-juridicas-relevantes-e-pouco-conhecidas-sobre-o-divorcio",
+      "title": "Cinco questões jurídicas relevantes e pouco conhecidas sobre o divórcio.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "o-que-e-um-testamento-e-quais-suas-principais-vantagens",
+      "title": "O que é um testamento e quais suas principais vantagens?",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "qual-a-melhor-forma-de-planejamento-sucessorio",
+      "title": "Qual a melhor forma de planejamento sucessório?",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "estou-sendo-impedido-de-ver-meus-filhos-o-que-devo-fazer",
+      "title": "Estou sendo impedido de ver meus filhos, o que devo fazer?",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "stf-afasta-cobranca-de-imposto-de-renda-sobre-a-pensao-alimenticia",
+      "title": "STF AFASTA COBRANÇA DE IMPOSTO DE RENDA SOBRE A PENSÃO ALIMENTÍCIA",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "inovacoes-da-lei-maria-da-penha",
+      "title": "Inovações da Lei Maria da Penha",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "o-que-voce-precisa-saber-sobre-o-imposto-de-transmissao-causa-mortis-e-doacao",
+      "title": "O QUE VOCÊ PRECISA SABER SOBRE O IMPOSTO DE TRANSMISSÃO CAUSA MORTIS E DOAÇÃO",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "cinco-questoes-patrimoniais-do-direito-de-familia-que-poucos-conhecem",
+      "title": "CINCO QUESTÕES PATRIMONIAIS DO DIREITO DE FAMÍLIA QUE POUCOS CONHECEM.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "cinco-coisas-sobre-inventario-extrajudicial",
+      "title": "CINCO COISAS SOBRE INVENTÁRIO EXTRAJUDICIAL",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "breves-consideracoes-sobre-as-principais-diferencas-entre-uniao-estavel-e-namoro",
+      "title": "BREVES CONSIDERAÇÕES SOBRE AS PRINCIPAIS DIFERENÇAS ENTRE UNIÃO ESTÁVEL E NAMORO.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "pensao-alimenticia-e-pandemia",
+      "title": "PENSÃO ALIMENTÍCIA E PANDEMIA",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "cinco-coisas-sobre-violencia-domestica",
+      "title": "CINCO COISAS SOBRE VIOLÊNCIA DOMÉSTICA",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "os-alimentos-compensatorios-retroagem-a-data-da-citacao",
+      "title": "OS ALIMENTOS COMPENSATÓRIOS RETROAGEM À DATA DA CITAÇÃO",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "cinco-coisas-que-voce-precisa-saber-sobre-o-divorcio",
+      "title": "CINCO COISAS QUE VOCÊ PRECISA SABER SOBRE O DIVÓRCIO",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "doencas-que-isentam-o-pagamento-de-imposto-de-renda",
+      "title": "DOENÇAS QUE ISENTAM O PAGAMENTO DE IMPOSTO DE RENDA",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "funcionamento-codvid-19",
+      "title": "Funcionamento CODVID-19",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "divorcio-2",
+      "title": "Divórcio",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-2",
+      "title": "Alimentos",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "outros",
+      "title": "Outros",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "divorcio",
+      "title": "Divórcio",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "direito-sucessorio",
+      "title": "Direito Sucessório",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "concubinato-uniao-estavel",
+      "title": "Concubinato/união estável",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "bens-regimes",
+      "title": "Bens (Regimes)",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos",
+      "title": "Alimentos",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-compensatorios-vies-compensatorio-indenizatorio-pelo-prejuizo-presumido-consistente-na-nao-imissao-imediata-nos-bens-afetos-ao-quinhao-a-que-faz-jus-recurso-ordinario",
+      "title": "Alimentos Compensatórios – (…) VIÉS COMPENSATÓRIO/INDENIZATÓRIO PELO PREJUÍZO PRESUMIDO CONSISTENTE NA NÃO IMISSÃO IMEDIATA NOS BENS AFETOS AO QUINHÃO A QUE FAZ JUS. RECURSO ORDINÁRIO PROVIDO",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "uniao-estavel-familias-paralelas-dever-de-fidelidade-direito-civil-recurso-especial-familia-acao-de-reconhecimento-de-uniao-estavel-relacao-concomitante-dever-de-fid",
+      "title": "União Estável – Famílias Paralelas – Dever de Fidelidade – DIREITO CIVIL. RECURSO ESPECIAL. FAMÍLIA. AÇÃO DE RECONHECIMENTO DE UNIÃO ESTÁVEL. RELAÇÃO CONCOMITANTE. DEVER DE FIDELIDADE. INTENÇÃO DE CONSTITUIR FAMÍLIA. AUSÊNCIA. ARTIGOS ANALISADOS. ARTS. 1º E 2º DA LEI",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "exoneracao-de-alimentos-alimentos-temporarios-direito-civil-recurso-especial-familia-acao-de-exoneracao-de-alimentos-acordo-para-pagamento-de-pensao-ex-conjuge-manutencao-da",
+      "title": "Exoneração de Alimentos – Alimentos Temporários – DIREITO CIVIL. RECURSO ESPECIAL. FAMÍLIA. AÇÃO DE EXONERAÇÃO DE ALIMENTOS. ACORDO PARA PAGAMENTO DE PENSÃO. EX-CÔNJUGE. MANUTENÇÃO DA SITUAÇÃO FINANCEIRA DAS PARTES. TEMPORARIEDADE. POSSIBILIDADE DE EXONERAÇÃO. RECURSO ADESIVO. INADEQUAÇÃO. ARTIGOS ANALISADOS. ARTS. 15 DA LEI 5.578/68 E ARTS. 1.694 E 1.699 DO CÓDIGO CIVIL",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "sucessoes-direito-processual-civil-legitimidade-ativa-do-espolio-em-demanda-na-qual-se-busque-indenizacao-securitaria-por-invalidez-permanente",
+      "title": "Sucessões – DIREITO PROCESSUAL CIVIL. LEGITIMIDADE ATIVA DO ESPÓLIO EM DEMANDA NA QUAL SE BUSQUE INDENIZAÇÃO SECURITÁRIA POR INVALIDEZ PERMANENTE",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-provisorios-eficacia-agravo-regimental-no-agravo-em-recurso-especial-alimentos-provisorios-execucao-posterior-reconhecimento-judicial-de-inexistencia-da-responsabilida",
+      "title": "Alimentos Provisórios – Eficácia – AGRAVO REGIMENTAL NO AGRAVO EM RECURSO ESPECIAL. ALIMENTOS PROVISÓRIOS. EXECUÇÃO. POSTERIOR RECONHECIMENTO JUDICIAL DE INEXISTÊNCIA DA RESPONSABILIDADE ALIMENTAR. EFICÁCIA EX NUNC. PRECEDENTES. IMPROVIMENTO",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "regime-de-bens-alteracao-recurso-especial-civil-e-processual-civil-direito-de-familia-dissolucao-do-casamento-alteracao-do-regime-de-bens-termo-inicial-dos-seus-efeitos-ex-nu",
+      "title": "Regime de bens – Alteração – RECURSO ESPECIAL. CIVIL E PROCESSUAL CIVIL. DIREITO DE FAMÍLIA. DISSOLUÇÃO DO CASAMENTO. ALTERAÇÃO DO REGIME DE BENS. TERMO INICIAL DOS SEUS EFEITOS. EX NUNC. ALIMENTOS. RAZOABILIDADE. BINÔMIO NECESSIDADE E POSSIBILIDADE. CONCLUSÕES ALCANÇADAS PELA CORTE DE ORIGEM. IMPOSSIBILIDADE DE REVISÃO NA VIA ELEITA. SÚMULA 7/STJ",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "bem-de-familia-direito-civil-caracterizacao-como-bem-de-familia-do-unico-imovel-residencial-do-devedor-cedido-a-familiares",
+      "title": "Bem de Família – DIREITO CIVIL. CARACTERIZAÇÃO COMO BEM DE FAMÍLIA DO ÚNICO IMÓVEL RESIDENCIAL DO DEVEDOR CEDIDO A FAMILIARES.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "dano-moral-falecimento-direito-civil-metodologia-de-fixacao-de-danos-morais-devidos-a-parentes-de-vitimas-de-dano-morte-na-hipotese-de-nucleos-familiares-com-diferente-numero-de-m",
+      "title": "Dano Moral – falecimento – DIREITO CIVIL. METODOLOGIA DE FIXAÇÃO DE DANOS MORAIS DEVIDOS A PARENTES DE VÍTIMAS DE DANO MORTE NA HIPÓTESE DE NÚCLEOS FAMILIARES COM DIFERENTE NÚMERO DE MEMBROS",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-possibilidades-executorias-direito-civil-e-processual-civil-adjudicacao-de-direitos-hereditarios-do-herdeiro-devedor-de-alimentos",
+      "title": "Alimentos – Possibilidades Executórias – DIREITO CIVIL E PROCESSUAL CIVIL. ADJUDICAÇÃO DE DIREITOS HEREDITÁRIOS DO HERDEIRO DEVEDOR DE ALIMENTOS",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "partilha-de-bens-no-exterior-direito-processual-civil-e-direito-internacional-privado-competencia-para-reconhecimento-de-direito-a-meacao-de-bens-localizados-fora-do-brasil",
+      "title": "Partilha de bens no exterior – DIREITO PROCESSUAL CIVIL E DIREITO INTERNACIONAL PRIVADO. COMPETÊNCIA PARA RECONHECIMENTO DE DIREITO A MEAÇÃO DE BENS LOCALIZADOS FORA DO BRASIL",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "desconsideracao-inversa-da-personalidade-juridica-direito-processual-civil-legitimidade-de-pessoa-juridica-para-impugnar-decisao-que-desconsidere-a-sua-personalidade",
+      "title": "Desconsideração inversa da personalidade jurídica – DIREITO PROCESSUAL CIVIL. LEGITIMIDADE DE PESSOA JURÍDICA PARA IMPUGNAR DECISÃO QUE DESCONSIDERE A SUA PERSONALIDADE",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "penhorabilidade-de-bem-de-familia-direito-civil-afastamento-da-protecao-dada-ao-bem-de-familia",
+      "title": "Penhorabilidade de bem de família – DIREITO CIVIL. AFASTAMENTO DA PROTEÇÃO DADA AO BEM DE FAMÍLIA",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "pensao-previdenciaria-por-morte-menor-direito-previdenciario-concessao-de-beneficio-previdenciario-a-crianca-ou-adolescente-sob-guarda-judicial",
+      "title": "Pensão previdenciária por morte – Menor – DIREITO PREVIDENCIÁRIO. CONCESSÃO DE BENEFÍCIO PREVIDENCIÁRIO A CRIANÇA OU ADOLESCENTE SOB GUARDA JUDICIAL",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "impossibilidade-de-homologacao-de-sentenca-estrangeira-acao-de-alimentos-e-guarda-em-tramite-no-brasil-direito-processual-civil-hipotese-em-que-nao-e-possivel-a-homologacao-de-sen",
+      "title": "Impossibilidade de homologação de sentença estrangeira – ação de alimentos e guarda em trâmite no Brasil – DIREITO PROCESSUAL CIVIL. HIPÓTESE EM QUE NÃO É POSSÍVEL A HOMOLOGAÇÃO DE SENTENÇA ESTRANGEIRA",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "bem-de-familia-direito-civil-e-processual-civil-impenhorabilidade-do-bem-de-familia-frente-a-hipotese-de-desconsideracao-da-personalidade-juridica",
+      "title": "Bem de família – DIREITO CIVIL E PROCESSUAL CIVIL. IMPENHORABILIDADE DO BEM DE FAMÍLIA FRENTE A HIPÓTESE DE DESCONSIDERAÇÃO DA PERSONALIDADE JURÍDICA",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "cumprimento-de-sentenca-em-acao-de-alimentos-direito-processual-civil-recurso-especial-acao-de-alimentos-execucao-cumprimento-de-sentenca-artigos-analisados-475-j-e-732-do-cpc",
+      "title": "Cumprimento de sentença em ação de alimentos – DIREITO PROCESSUAL CIVIL. RECURSO ESPECIAL. AÇÃO DE ALIMENTOS. EXECUÇÃO. CUMPRIMENTO DE SENTENÇA. ARTIGOS ANALISADOS: 475-J E 732 DO CPC",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "uniao-recorre-ao-stf-para-suspender-pagamento-de-vantagem-a-procurador-federal",
+      "title": "União recorre ao STF para suspender pagamento de vantagem a procurador federal",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "ministro-nega-liminar-para-servidor-que-teve-aposentadoria-cancelada-pelo-tcu",
+      "title": "Ministro nega liminar para servidor que teve aposentadoria cancelada pelo TCU",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "relator-vota-pela-equiparacao-da-uniao-homoafetiva-estavel-a-entidade-familiar",
+      "title": "Relator vota pela equiparação da união homoafetiva estável à entidade familiar",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "uniao-homoafetiva-ministro-celso-de-mello-cassa-decisao-que-nao-reconheceu-uniao-estavel-homoafetiva",
+      "title": "União Homoafetiva – Ministro Celso de Mello cassa decisão que não reconheceu união estável homoafetiva",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "uniao-homoafetiva-voto-do-min-celso-de-mello-em-recurso-que-reconheceu-direito-previdenciario-de-companheiro-homoafetivo",
+      "title": "União homoafetiva – Voto do Min. Celso de Mello em recurso que reconheceu direito previdenciário de companheiro homoafetivo",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "lei-maria-da-penha-acao-penal-incondicionada-a-retratacao-da-vitima",
+      "title": "Lei Maria da Penha – Ação Penal incondicionada à retratação da vítima",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "sucessoes-jurisprudencia-sobre-sucessao-do-conjuge-e-instavel-por-jose-rogerio-cruz-e-tucci",
+      "title": "Sucessões – Jurisprudência sobre sucessão do cônjuge é instável – Por José Rogério Cruz e Tucci",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "separacao-de-corpos-e-o-desenlace-familiar-maria-berenice-dias",
+      "title": "Separação de Corpos e o Desenlace Familiar – Maria Berenice Dias",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "separacao-mudancas-na-lei-nao-extinguiram-a-separacao-fernando-augusto-de-vita-borges-de-sales",
+      "title": "Separação – Mudanças na lei não extinguiram a separação (Fernando Augusto De Vita Borges de Sales)",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "reproducao-assistida",
+      "title": "Reprodução Assistida",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "paternidade-socioafetiva-e-o-retrocesso-da-sumula-n-301-do-stj-paulo-luiz-netto-lobo",
+      "title": "Paternidade socioafetiva e o retrocesso da súmula n. 301 do STJ – Paulo Luiz Netto Lôbo.",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "paternidade-socioafetiva-luiz-fernando-valladao",
+      "title": "Paternidade socioafetiva – Luiz Fernando Valladão",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "falar-com-o-juiz-paulo-evandro-de-siqueira",
+      "title": "Falar com o juiz – Paulo Evandro de Siqueira",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "em-breve-alienacao-parental-sera-crime-denise-maria-perissini-da-silva",
+      "title": "Em breve, alienação parental será crime – Denise Maria Perissini da Silva",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "ec-66-2010-ec-no-66-10-a-emenda-constitucional-do-casamento-arnoldo-camanho-de-assis",
+      "title": "EC 66/2010 – EC nº 66/10: A Emenda Constitucional do Casamento – Arnoldo Camanho de Assis",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "ec-66-2010-ec-66-10-e-agora-maria-berenice-dias",
+      "title": "EC 66/2010 – EC 66/10-e agora? – Maria Berenice Dias",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "ec-66-2010-a-emenda-constitucional-n-66-2010-semelhancas-diferencas-e-inutilidades-entre-separacao-e-divorcio-e-o-direito-intertemporal-rodrigo-da-cunha-pereira",
+      "title": "EC 66/2010 – A Emenda Constitucional n. 66/2010: Semelhanças, Diferenças e Inutilidades entre Separação e Divórcio e o Direito Intertemporal – Rodrigo da Cunha Pereira",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "divorcio-las-vegas-e-aqui-marco-tulio-murano-garcia",
+      "title": "Divórcio – Las Vegas é aqui! – Marco Túlio Murano Garcia",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-teoria-da-aparencia-na-defesa-dos-interesses-do-alimentado-fernanda-dal-sasso-de-resende",
+      "title": "Alimentos – Teoria da aparência na defesa dos interesses do alimentado – Fernanda Dal Sasso de Resende",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-obrigacao-dever-de-assistencia-e-alimentos-transitorios-rolf-madaleno",
+      "title": "Alimentos – Obrigação, Dever de Assistência e Alimentos Transitórios – Rolf Madaleno",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-dos-alimentos-gravidicos-lei-no-11-804-2008-antonio-cezar-lima-da-fonseca",
+      "title": "Alimentos – Dos Alimentos Gravídicos – Lei nº 11.804/2008 (Antônio Cezar Lima da Fonseca)",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-alimentos-gravidicos-aspectos-da-lei-n-11-804-2008-leandro-soares-lomeu",
+      "title": "Alimentos – Alimentos Gravídicos: Aspectos da Lei n. 11.804/2008 (Leandro Soares Lomeu).",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-alimentos-gravidicos-e-a-lei-n-11-804-2008-douglas-phillips-freitas",
+      "title": "Alimentos – Alimentos Gravídicos e a Lei n. 11.804/2008 (Douglas Phillips Freitas)",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-alimentos-gravidicos-jesualdo-eduardo-de-almeida-junior",
+      "title": "Alimentos – Alimentos Gravídicos (Jesualdo Eduardo de Almeida Júnior)",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "alimentos-alimentos-compensatorios-lauro-olsen",
+      "title": "Alimentos – Alimentos Compensatórios – Lauro Olsen",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "acordo-de-alimentos-firmado-por-advogado-sem-poder-para-tanto-e-anulado-pela-justica",
+      "title": "Acordo de alimentos firmado por advogado sem poder para tanto é anulado pela justiça",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "abandono-afetivo",
+      "title": "Abandono Afetivo",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
+    {
+      "slug": "a-autenticacao-de-documentos-no-novo-codigo-civil-mario-antonio-lobato-de-paiva",
+      "title": "A autenticação de documentos no novo Código Civil – Mário Antônio Lobato de Paiva",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    }
+  ]
+}

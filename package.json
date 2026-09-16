@@ -1,0 +1,16 @@
+{
+  "name": "mauricio-lindoso-adv-oficial",
+  "version": "1.0.0",
+  "description": "Site institucional Mauricio Lindoso Advocacia",
+  "main": "script.js",
+  "scripts": {
+    "build:blog": "node scripts/build-blog.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sanitize-html": "^2.13.0"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+deploy/
+
+# Material original do designer (.ai/.eps/.psd, mockups, manual em PDF) —
+# ~330MB de binários, não cabe bem no histórico do git. Fica só local;
+# faça backup à parte (zip num Drive/Dropbox, por exemplo).
+brand-assets/
