@@ -15,11 +15,11 @@ function renderHeader() {
   return `
     <header>
         <div class="nav">
-            <a href="/" class="logo" aria-label="Mauricio Lindoso Advocacia, página inicial">
+            <a href="/" class="logo" aria-label="Maurício Lindoso Advocacia, página inicial">
                 <img class="logo-img logo-img-light" src="/assets/brand/logo-full-white.svg"
-                    alt="Mauricio Lindoso Advocacia">
+                    alt="Maurício Lindoso Advocacia">
                 <img class="logo-img logo-img-dark" src="/assets/brand/logo-full-red.svg"
-                    alt="Mauricio Lindoso Advocacia">
+                    alt="Maurício Lindoso Advocacia">
             </a>
 
             <button class="menu-toggle" aria-label="Alternar menu">
@@ -45,7 +45,7 @@ function renderFooter() {
         <div class="wrap">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img class="logo-img" src="/assets/brand/logo-full-white.svg" alt="Mauricio Lindoso Advocacia">
+                    <img class="logo-img" src="/assets/brand/logo-full-white.svg" alt="Maurício Lindoso Advocacia">
                     <p>Direito de Família e Sucessões em Brasília desde 1985.</p>
                 </div>
                 <div class="footer-col">
@@ -61,12 +61,14 @@ function renderFooter() {
                     <h4>Contato</h4>
                     <span>SCS Q. 06, Bl. A, nº 136, 3º andar</span>
                     <span>Brasília, DF, 70.306-906</span>
-                    <span>contato@mauriciolindoso.adv.br</span>
+                    <a href="tel:+5561998342821">(61) 99834-2821</a>
+                    <a href="mailto:contato@mauriciolindoso.adv.br">contato@mauriciolindoso.adv.br</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>© 2026 Mauricio Lindoso Advocacia. Todos os direitos reservados.</span>
+                <span>© 2026 Maurício Lindoso Advocacia. Todos os direitos reservados.</span>
                 <span>OAB, Direito de Família e Sucessões</span>
+                <a href="/privacidade.html">Política de Privacidade</a>
             </div>
         </div>
     </footer>`;
@@ -105,6 +107,7 @@ ${renderHeader()}
 ${main}
     </main>
 ${renderFooter()}
+    <script src="/tracking.config.js"></script>
     <script src="/script.js"></script>
     <script src="/blog/blog.js"></script>
 </body>
@@ -114,8 +117,12 @@ ${renderFooter()}
 }
 
 function categoryBadges(categories) {
-  if (!categories.length) return '';
-  return `<div class="blog-categories">${categories
+  // "Uncategorized" é a categoria padrão vazia do WordPress (post sem
+  // categoria real atribuída) — não é uma informação útil pro visitante,
+  // então some sem deixar rótulo nenhum, em vez de mostrar isso.
+  const visible = categories.filter((c) => c.slug !== 'uncategorized');
+  if (!visible.length) return '';
+  return `<div class="blog-categories">${visible
     .map((c) => `<span class="blog-category">${escapeHtml(c.name)}</span>`)
     .join('')}</div>`;
 }
@@ -174,10 +181,10 @@ ${cardsHTML}
         </section>`;
 
   return renderShell({
-    title: 'Conteúdos | Mauricio Lindoso Advocacia',
-    description: 'Análises, novidades e orientações em Direito de Família e Sucessões pela equipe da Mauricio Lindoso Advocacia.',
-    ogTitle: 'Conteúdos | Mauricio Lindoso Advocacia',
-    ogDescription: 'Análises, novidades e orientações em Direito de Família e Sucessões pela equipe da Mauricio Lindoso Advocacia.',
+    title: 'Conteúdos | Maurício Lindoso Advocacia',
+    description: 'Análises, novidades e orientações em Direito de Família e Sucessões pela equipe da Maurício Lindoso Advocacia.',
+    ogTitle: 'Conteúdos | Maurício Lindoso Advocacia',
+    ogDescription: 'Análises, novidades e orientações em Direito de Família e Sucessões pela equipe da Maurício Lindoso Advocacia.',
     ogImage: `${config.SITE_URL}/assets/brand/og-image.png`,
     canonical: `${config.SITE_URL}/blog/`,
     main,
@@ -208,7 +215,7 @@ ${post.contentHTML}
         </article>`;
 
   return renderShell({
-    title: `${post.title} | Mauricio Lindoso Advocacia`,
+    title: `${post.title} | Maurício Lindoso Advocacia`,
     description: post.excerpt,
     ogTitle: post.title,
     ogDescription: post.excerpt,

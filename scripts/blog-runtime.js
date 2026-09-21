@@ -12,9 +12,14 @@ function escapeHtml(str) {
 }
 
 function categoryBadgesHTML(categories) {
-    if (!categories || !categories.length) return '';
+    // Mesmo filtro do server (ver categoryBadges em scripts/templates.js)
+    // — "Uncategorized" é a categoria padrão vazia do WordPress, não
+    // aparece como rótulo. Sem isso, só os cards carregados via
+    // "Carregar mais" (client-side) ficavam com o rótulo errado.
+    var visible = (categories || []).filter(function (c) { return c.slug !== 'uncategorized'; });
+    if (!visible.length) return '';
     return '<div class="blog-categories">' +
-        categories.map(function (c) { return '<span class="blog-category">' + escapeHtml(c.name) + '</span>'; }).join('') +
+        visible.map(function (c) { return '<span class="blog-category">' + escapeHtml(c.name) + '</span>'; }).join('') +
         '</div>';
 }
 

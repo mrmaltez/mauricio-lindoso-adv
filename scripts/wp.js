@@ -92,7 +92,7 @@ async function resolveImage(post) {
     }
   }
 
-  return { src: config.FALLBACK_COVER_IMAGE, alt: 'Mauricio Lindoso Advocacia', source: 'fallback' };
+  return { src: config.FALLBACK_COVER_IMAGE, alt: 'Maurício Lindoso Advocacia', source: 'fallback' };
 }
 
 function formatDatePtBR(isoDate) {

@@ -1,5 +1,6 @@
 node_modules/
 deploy/
+.wrangler/
 
 # Material original do designer (.ai/.eps/.psd, mockups, manual em PDF) —
 # ~330MB de binários, não cabe bem no histórico do git. Fica só local;

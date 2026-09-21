@@ -1,15 +1,16 @@
 {
-  "generatedAt": "2026-09-16T01:28:59.486Z",
+  "generatedAt": "2026-09-21T05:03:22.154Z",
   "wpApiBase": "https://mauriciolindoso.adv.br/wp-json/wp/v2",
-  "totalPosts": 93,
+  "totalPosts": 94,
   "totalListingBatches": 11,
   "postsPerBatch": 9,
   "images": {
     "featured": 0,
     "content": 0,
-    "fallback": 93
+    "fallback": 94
   },
   "fallbackImageSlugs": [
+    "tecnicas-e-metodologias-para-processos-complexos-de-inventario",
     "qual-o-melhor-regime-de-bens-para-os-empresarios-brasileiros",
     "abandono-afetivo-agora-e-ilicito-civil-o-afeto-virou-dever-juridico",
     "como-a-pensao-alimenticia-pode-reduzir-o-imposto-de-renda-de-quem-a-paga",
@@ -105,6 +106,14 @@
     "a-autenticacao-de-documentos-no-novo-codigo-civil-mario-antonio-lobato-de-paiva"
   ],
   "flaggedPosts": [
+    {
+      "slug": "tecnicas-e-metodologias-para-processos-complexos-de-inventario",
+      "title": "Técnicas e Metodologias para Processos Complexos de Inventário",
+      "notes": [
+        "sem imagem (capa nem no corpo do post) — usado fallback da marca",
+        "embed de autor quebrado na API, usado fallback"
+      ]
+    },
     {
       "slug": "qual-o-melhor-regime-de-bens-para-os-empresarios-brasileiros",
       "title": "Qual o melhor regime de bens para os empresários brasileiros?",

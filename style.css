@@ -410,7 +410,12 @@ header.header-scrolled .hamburger::after {
    o bug da rodada anterior). Calibrado olhando 1280/1440/1920px. */
 .hero-content {
     max-width: 700px;
-    margin: 0 0 0 120px;
+    /* Ajuste maior que as rodadas anteriores (era um valor fixo de
+       120px) — cresce com a largura da tela de propósito, porque o
+       vazio à direita (entre o texto e o foco da foto, ancorada em 75%
+       do eixo horizontal) aumenta proporcionalmente em telas largas.
+       Testado em 1280/1440/1920px, ver prints da rodada. */
+    margin: 0 0 0 clamp(120px, 19vw, 360px);
 }
 
 .hero-text {
@@ -631,6 +636,95 @@ header.header-scrolled .hamburger::after {
     color: var(--slate);
 }
 
+/* ---------- CTA intermediária ---------- */
+/* Faixa curta reaproveitada em mais de um ponto da rolagem (ver
+   index.html) — só uma linha de texto + botão, pra dar mais chances de
+   contato sem quebrar o ritmo visual das seções ao redor. Fundo escuro
+   (mesma cor institucional do "Por que escolher") pra destacar da faixa
+   clara ao redor, com o símbolo da Justiça como marca d'água única,
+   sangrando de um canto — não é padrão/textura repetida. */
+.cta-strip {
+    position: relative;
+    padding: 56px 0;
+    background: var(--black);
+    color: var(--ivory);
+    overflow: hidden;
+}
+
+.cta-strip-icon {
+    /* Largura calculada na proporção real do SVG (381.04 x 683.63) pra
+       "altura" ser um controle direto de tamanho, não uma caixa quadrada
+       com espaço vazio sobrando nas laterais. Sempre inteiro (nada
+       sangrando/cortado na borda) e sempre no mesmo canto com a mesma
+       margem, nas duas faixas — antes cada uma cortava num ponto
+       diferente, o que ficava inconsistente entre si. */
+    position: absolute;
+    width: 67px;
+    height: 120px;
+    right: 24px;
+    bottom: 24px;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.cta-strip-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cta-strip-inner p {
+    font-family: var(--font-display);
+    font-size: clamp(19px, 2.2vw, 24px);
+    font-weight: 600;
+    color: var(--ivory);
+}
+
+@media (max-width: 760px) {
+    .cta-strip {
+        padding: 40px 0;
+    }
+
+    .cta-strip-icon {
+        /* Bem maior que a versão anterior (~80% da altura da faixa) —
+           opacidade bem mais baixa que no desktop (4.5% vs 8%) pra
+           compensar o tamanho e não brigar com o texto/botão por cima,
+           mesmo sobrepondo boa parte da área deles. Mesmo canto do
+           desktop (inferior direito), só em escala bem maior.
+
+           max-width + max-height (não width/height fixos) com
+           object-fit: contain — antes um dos dois lados podia estourar
+           o espaço disponível e cortar na borda da faixa (overflow:
+           hidden do .cta-strip cortando o que passava). Assim o símbolo
+           sempre encolhe pelas duas dimensões junto, mantendo a
+           proporção original, e cabe inteiro com folga. */
+        width: auto;
+        height: auto;
+        max-width: 90px;
+        max-height: 150px;
+        object-fit: contain;
+        right: 14px;
+        bottom: 14px;
+        top: auto;
+        opacity: 0.045;
+    }
+
+    .cta-strip-inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cta-strip .btn {
+        width: 100%;
+    }
+}
+
 /* ---------- founder ---------- */
 .founder {
     padding: 120px 0;
@@ -667,6 +761,13 @@ header.header-scrolled .hamburger::after {
     margin-bottom: 18px;
 }
 
+.founder-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
 .founder-content h2 {
     font-family: var(--font-display);
     font-size: clamp(26px, 3vw, 34px);
@@ -675,31 +776,22 @@ header.header-scrolled .hamburger::after {
     line-height: 1.25;
 }
 
+/* Escondido no desktop (a bio sempre aparece) — só vira indicador de
+   accordion no mobile, mesmo padrão dos cards de equipe. */
+.founder-chevron {
+    display: none;
+    width: 22px;
+    height: 22px;
+    color: var(--bronze);
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
 .founder-content>p {
     font-size: 16.5px;
     color: var(--slate);
     margin-bottom: 28px;
     max-width: 520px;
-}
-
-.founder-sign {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-top: 26px;
-    border-top: 1px solid var(--line);
-}
-
-.founder-sign strong {
-    display: block;
-    font-family: var(--font-display);
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.founder-sign span {
-    font-size: 13.5px;
-    color: var(--slate);
 }
 
 /* ---------- equipe (team) ---------- */
@@ -969,21 +1061,26 @@ header.header-scrolled .hamburger::after {
     margin-bottom: 3px;
 }
 
-.contact-detail span {
+.contact-detail span,
+.contact-detail a {
     font-size: 13.5px;
     color: var(--slate);
     line-height: 1.5;
 }
 
-.contact-info .btn {
-    margin-top: auto;
-    align-self: flex-start;
+.contact-detail a:hover {
+    color: var(--navy);
 }
 
+/* Mapa: agora um bloco cheio abaixo da grade (endereço/telefone/e-mail +
+   formulário), não mais uma coluna dela — dá mais espaço pro formulário
+   ficar ao lado do card de contato. */
 .contact-map {
     position: relative;
-    min-height: 420px;
+    min-height: 360px;
+    margin-top: 32px;
     background: var(--ivory-deep);
+    border: 1px solid var(--line);
 }
 
 .contact-map iframe {
@@ -993,6 +1090,125 @@ header.header-scrolled .hamburger::after {
     inset: 0;
     border: 0;
     filter: grayscale(15%) contrast(1.05);
+}
+
+/* ---------- formulário de contato ---------- */
+/* Mais uma forma de contato, na mesma grade do card de endereço/telefone/
+   e-mail — o fundo/borda branca vêm de .contact-grid, que envolve as
+   duas colunas; aqui só o padding e a linha divisória entre elas. */
+.contact-form-block {
+    padding: 56px 48px;
+    border-left: 1px solid var(--line);
+}
+
+/* Título + apoio no mesmo estilo do h2/p do card ao lado
+   (.contact-info h2 / .contact-info > p), só sem eyebrow antes — o
+   "Contato" eyebrow do card já cobre as duas colunas, então o
+   margin-top aqui substitui o espaço que o eyebrow ocuparia, pra os
+   dois títulos alinharem na mesma altura lado a lado. */
+.contact-form-block > h2 {
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 600;
+    margin: 38px 0 16px;
+    line-height: 1.25;
+}
+
+.contact-form-block > p {
+    color: var(--slate);
+    font-size: 15.5px;
+    margin-bottom: 36px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 24px;
+    max-width: 640px;
+}
+
+/* Honeypot anti-spam: nunca visível pra gente real, só bots preenchem. */
+.form-honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-row-full {
+    grid-column: 1 / -1;
+}
+
+.form-row label {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--slate);
+}
+
+.form-row input,
+.form-row textarea {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--navy);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 12px 14px;
+    resize: vertical;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    outline: 2px solid var(--bronze);
+    outline-offset: 1px;
+    border-color: var(--bronze);
+}
+
+.contact-form-submit {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin-top: 4px;
+}
+
+.contact-form-status {
+    grid-column: 1 / -1;
+    font-size: 14px;
+    margin: 2px 0 0;
+    min-height: 20px;
+}
+
+.contact-form-status.is-success {
+    /* verde escuro (não é cor da marca — usado só aqui, como sinal
+       universal de sucesso): 6.16:1 contra o branco do card, passa AA
+       com folga */
+    color: #166534;
+    font-weight: 600;
+}
+
+.contact-form-status.is-error {
+    /* vermelho institucional: 8.17:1 sobre fundo claro (mesmo cálculo
+       já usado em .article-body a) */
+    color: var(--red);
+    font-weight: 600;
+}
+
+@media (max-width: 760px) {
+    .contact-form-block {
+        padding: 32px 24px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ---------- footer ---------- */
@@ -1053,6 +1269,10 @@ footer {
     flex-wrap: wrap;
     gap: 10px;
     font-size: 12.5px;
+}
+
+.footer-bottom a:hover {
+    color: var(--pure-white);
 }
 
 /* ---------- reveal ---------- */
@@ -1319,6 +1539,44 @@ footer {
 .article-back:hover {
     color: var(--navy);
 }
+
+/* Página de Política de Privacidade: caixa de pendências e trechos
+   entre colchetes que ainda dependem de confirmação do cliente. */
+.legal-pending {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    padding: 22px 28px;
+    background: rgba(var(--red-rgb), 0.06);
+    border: 1px solid rgba(var(--red-rgb), 0.25);
+    border-radius: 8px;
+}
+
+.legal-pending strong {
+    display: block;
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+.legal-pending ul {
+    margin: 0 0 0 20px;
+}
+
+.legal-pending li {
+    margin-bottom: 6px;
+    color: var(--slate);
+}
+
+.legal-placeholder {
+    /* vermelho institucional sobre fundo levemente tingido: contraste
+       de texto herdado do teste de .article-body a (8.17:1), a mudança
+       de fundo não afeta a razão de forma relevante */
+    color: var(--red);
+    background: rgba(var(--red-rgb), 0.1);
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 600;
+}
 @media (max-width: 980px) {
     .hero-content {
         max-width: 100%;
@@ -1361,8 +1619,19 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .contact-form-block {
+        border-left: none;
+        border-top: 1px solid var(--line);
+    }
+
     .contact-map {
         min-height: 320px;
+    }
+
+    /* O alinhamento com o h2 do card ao lado só importa lado a lado —
+       empilhado, esse respiro extra vira só um vão vazio sem motivo. */
+    .contact-form-block > h2 {
+        margin-top: 0;
     }
 
     .blog-grid {
@@ -1603,6 +1872,27 @@ footer {
         height: 380px;
     }
 
+    /* Bio do fundador em accordion — mesmo padrão dos cards de equipe */
+    .founder-toggle {
+        cursor: pointer;
+    }
+
+    .founder-chevron {
+        display: block;
+    }
+
+    .founder-content.is-open .founder-chevron {
+        transform: rotate(180deg);
+    }
+
+    .founder-content>p {
+        display: none;
+    }
+
+    .founder-content.is-open>p {
+        display: block;
+    }
+
     .contact-info {
         padding: 40px 24px; 
     }
@@ -1643,6 +1933,112 @@ footer {
 
     .article-cover {
         margin-top: 28px;
+    }
+}
+
+/* ---------- botão flutuante do WhatsApp ---------- */
+/* Injetado via JS (script.js) em toda página que carrega o script —
+   verde padrão do WhatsApp de propósito: reconhecimento imediato pro
+   público 50+ pesa mais aqui do que seguir a paleta vermelho/preto. */
+.whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    /* Verde-água oficial do WhatsApp (usado no cabeçalho do app), não o
+       verde vivo do ícone — o vivo (#25d366) só dá 1.98:1 com o ícone
+       branco, abaixo dos 3:1 exigidos pra elementos gráficos (WCAG AA
+       1.4.11). Este dá 4.14:1, mantendo a identidade do WhatsApp. */
+    background: #128c7e;
+    color: var(--pure-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(var(--black-rgb), 0.25);
+    z-index: 200;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(var(--black-rgb), 0.3);
+}
+
+.whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* ---------- banner de cookies ---------- */
+.cookie-banner {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    z-index: 210;
+    width: 100%;
+    max-width: 380px;
+    background: var(--pure-white);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 22px;
+    box-shadow: 0 16px 40px rgba(var(--black-rgb), 0.18);
+}
+
+.cookie-banner p {
+    font-size: 13.5px;
+    color: var(--slate);
+    line-height: 1.55;
+    margin-bottom: 16px;
+}
+
+.cookie-banner a {
+    color: var(--bronze);
+    text-decoration: underline;
+}
+
+.cookie-banner-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.cookie-banner-actions .btn {
+    padding: 10px 18px;
+    font-size: 13px;
+    flex: 1;
+}
+
+@media (max-width: 760px) {
+    .whatsapp-float {
+        right: 16px;
+        bottom: 16px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .whatsapp-float svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* Vira uma barra no rodapé da tela — mais fácil de usar com o
+       polegar do que um cartão flutuando à esquerda numa tela estreita.
+       Fica empilhada ACIMA do botão do WhatsApp (bottom compensa a
+       altura dele + margem) pra não sobrepor um no outro. */
+    .cookie-banner {
+        left: 12px;
+        right: 12px;
+        bottom: 84px;
+        transform: none;
+        width: auto;
+        max-width: none;
+        padding: 18px;
+    }
+
+    .cookie-banner-actions {
+        flex-direction: column;
     }
 }
 
